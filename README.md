@@ -4,7 +4,7 @@ Een moderne portfolio-website gebouwd met **Next.js**, ontworpen om mijn werk al
 
 ## 🌐 Live demo
 
-Bekijk de website hier: [https://portfolio-ycmi.vercel.app](https://portfolio-ycmi.vercel.app)
+Bekijk de website hier: [https://portfolio-ycmi.vercel.app](https://finalportfolio-pi.vercel.app/)
 
 ## 📦 Technologieën
 
