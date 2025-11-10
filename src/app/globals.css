@@ -1,0 +1,34 @@
+@import "tailwindcss";
+@import 'swiper/css';
+@import 'swiper/css/effect-coverflow';
+@import 'swiper/css/pagination';
+
+
+/* === Custom kleuren & fonts === */
+@theme {
+  --color-brand-orange: #E9724C;
+  --color-brand-beige: #FAF6EB;
+
+  --font-sans: "Montserrat", sans-serif;
+}
+
+/* === Donkere modus ondersteuning (optioneel) === */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-brand-beige: #0b0b0b;
+    --color-brand-orange: #ff8c5a;
+  }
+}
+
+/* === Basislayout === */
+html, body {
+  background: var(--color-brand-beige);
+  color: var(--color-brand-orange);
+  font-family: var(--font-sans);
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
