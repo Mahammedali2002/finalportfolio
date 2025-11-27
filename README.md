@@ -18,7 +18,7 @@ Deze portfolio toont echte klantprojecten op een rustige, moderne en interactiev
 - Volledig responsive ontwerp
 
 ## Installatie
-Zorg dat je **Node.js 18+** hebt geïnstalleerd.
+Zorg dat je **Recente versie* hebt geïnstalleerd.
 
 ```bash
 git clone <repository-url>
