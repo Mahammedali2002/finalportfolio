@@ -1,45 +1,75 @@
-# MAHWEB Portfolio – Next.js Edition #
+# MAHWEB Portfolio – Next.js Edition
 
-Een modern en animatie-gericht Next.js-portfolio dat mijn webdesign-, branding- en ontwikkelwerk voor MAHWEB professioneel presenteert. De website bevat animaties, casepagina’s, een WebGL-hero en is volledig responsive.
+Een modern, animatie-gericht Next.js-portfolio ontworpen om mijn webdesign-, branding- en ontwikkelwerk voor MAHWEB professioneel te presenteren.
+De applicatie bevat vloeiende animaties, dynamische case-pagina’s, een WebGL-hero-effect en een volledig responsive ontwerp.
 
-## Overzicht ##
-Deze portfolio toont mijn klantprojecten op een rustige, moderne en interactieve manier.
-De homepage bevat animaties, een WebGL shader en een projectslider.
+##  Overzicht
+Deze portfolio toont echte klantprojecten op een rustige, moderne en interactieve manier.
 
-## Installatie ##
+- Homepage met animaties, 3D-geïnspireerd shader-effect en projectslider
+- Uitgebreide case-studies via dynamische routing
+- Volledige MAHWEB-branding met kleuren **#FAF6EB** en **#E9724C**
+
+##  Belangrijke kenmerken
+- Hero met Framer Motion-animaties
+- WebGL shader via OGL (Balatro component)
+- Projectslider met Swiper.js
+- Dynamische casepagina’s via de Next.js App Router
+- Volledig responsive ontwerp
+
+## 🛠 Installatie
+Zorg dat je **Node.js 18+** hebt geïnstalleerd.
+
+```bash
 git clone <repository-url>
 cd portfolio
 npm install
+```
 
-## Interactiesysteem ##
-### Navigatie via muis ###
-Hover-effecten, shader-reactie en slider interaction.
+##  Interactiesysteem
 
-### Navigatie via toetsenbord ###
-Tab, Enter, Arrow keys.
+### Muisinteractie
+- Hover-animaties
+- Shader reageert op cursorbeweging
+- Swiper-slider is sleepbaar en scrollbaar
 
-### Dynamische routing ###
-/, /portfolio, /portfolio/[slug], /portfolio/barber-mardini
+### Toetsenbordnavigatie
+- Tab – door links navigeren
+- Enter – selecteren
+- Arrow Keys – slider bewegen
 
-## Applicatie starten ##
-### Ontwikkelmodus ###
+### Dynamische routing
+/ — Homepagina  
+/portfolio — Overzicht van projecten  
+/portfolio/[slug] — Dynamische casepagina  
+/portfolio/barber-mardini — Uitgewerkte case study  
+
+##  Problemen oplossen
+- Animaties werken niet: controleer of WebGL aan staat
+- Slider werkt niet: ververs de pagina
+- Shader onzichtbaar: andere browser of battery-saver uit
+
+##  Applicatie starten
+
+### Ontwikkelmodus
+```bash
 npm run dev
+```
+App draait op: http://localhost:3000
 
-### Productiemodus ###
+### Productie
+```bash
 npm run build
 npm start
+```
 
-## Projectstructuur ##
-Beschrijving van de mappen en componenten.
+##  Projectstructuur
+- src/app — pagina’s & layouts
+- components — Navbar, Balatro WebGL-animatie
+- public — projectafbeeldingen
+- tailwind.config.ts — MAHWEB kleuren
+- package.json — scripts & dependencies
 
-## Functionaliteiten ##
-Hero, slider, casepagina’s.
+##  Afhankelijkheden
+next, react, react-dom, tailwindcss, framer-motion, swiper, ogl, eslint
 
-## Belangrijke modules ##
-Balatro shader, Navbar, Dynamic routing.
-
-## Afhankelijkheden ##
-Next.js, React, Tailwind, Swiper, OGL.
-
-## License ##
-MIT License
