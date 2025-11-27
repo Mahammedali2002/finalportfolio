@@ -1,6 +1,6 @@
-# MAHWEB Portfolio – Next.js Edition
+# Portfolio – Next.js Edition
 
-Een modern, animatie-gericht Next.js-portfolio ontworpen om mijn webdesign-, branding- en ontwikkelwerk voor MAHWEB professioneel te presenteren.
+Een modern, animatie-gericht Next.js-portfolio ontworpen om mijn webdesign-, branding- en ontwikkelwerk te presenteren.
 De applicatie bevat vloeiende animaties, dynamische case-pagina’s, een WebGL-hero-effect en een volledig responsive ontwerp.
 
 ##  Overzicht
@@ -32,11 +32,6 @@ npm install
 - Hover-animaties
 - Shader reageert op cursorbeweging
 - Swiper-slider is sleepbaar en scrollbaar
-
-### Toetsenbordnavigatie
-- Tab – door links navigeren
-- Enter – selecteren
-- Arrow Keys – slider bewegen
 
 ### Dynamische routing
 / — Homepagina  
