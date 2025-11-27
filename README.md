@@ -9,7 +9,7 @@ Deze portfolio is gebouwd om mijn echte klantprojecten op een rustige, moderne e
 De homepage bevat animatie-elementen, een 3D-geïnspireerd shader-effect en een projectslider.
 Bezoekers kunnen uitgebreide case-studies bekijken via dynamische routing, met onderdelen zoals uitdaging, oplossing en resultaat.
 
-Belangrijke kenmerken zijn onder andere:
+Belangrijke kenmerken:
 
 Hero met Framer Motion animaties
 
@@ -25,7 +25,7 @@ Installatie
 
 Zorg dat je Node.js 18+ hebt geïnstalleerd.
 
-Clone het project en installeer alle afhankelijkheden:
+Clone het project en installeer de afhankelijkheden:
 
 git clone <repository-url>
 cd portfolio
@@ -33,48 +33,48 @@ npm install
 
 Interactiesysteem
 
-Het portfolio gebruikt geen game-controller, maar ondersteunt meerdere interactievormen.
+Dit portfolio ondersteunt meerdere interactievormen binnen de UI.
 
 Navigatie via muis
 
 Hover-animaties
 
-WebGL shader reageert op cursorbeweging
+Shader reageert op cursorbeweging
 
-Swiper is scroll- en sleepbaar
+Swiper-slider is sleepbaar en scrollbaar
 
 Navigatie via toetsenbord
 
-Tab → navigeren
+Tab – Navigeren door links
 
-Enter → selecteren
+Enter – Selecteren
 
-Pijltjestoetsen → slider bewegen
+Arrow Keys – Slider bewegen
 
 Dynamische routing
 
-Homepagina
+/ – Homepagina
 
-Portfolio-overzicht
+/portfolio – Overzicht van projecten
 
-Projectpagina’s via dynamische slugs
+/portfolio/[slug] – Dynamische casepagina
 
-Uitgebreide Barber Mardini case
+/portfolio/barber-mardini – Uitgewerkte case study
 
 Problemen oplossen bij interactie
 
-Animaties werken niet: WebGL moet aan staan
+Animaties werken niet: controleer of WebGL aan staat
 
-Slider reageert niet: pagina verversen
+Slider werkt niet: ververst de pagina
 
-Shader toont niet: controleer browser-instellingen
+Shader onzichtbaar: probeer een andere browser of zet battery-saver uit
 
 Applicatie starten
 Ontwikkelmodus
 npm run dev
 
 
-Website draait op:
+De applicatie is bereikbaar op:
 
 http://localhost:3000
 
@@ -83,33 +83,33 @@ npm run build
 npm start
 
 
-Het project is gehost via Vercel, inclusief automatische deploys op elke GitHub-push.
+Gehost via Vercel, inclusief automatische deployments vanaf GitHub.
 
 Projectstructuur
 
-Hieronder staat de globale structuur van het project in normale tekstvorm:
+De globale structuur van het project:
 
-De map src/app bevat alle pagina’s en layouts
+De map src/app bevat alle pagina’s en layouts:
 
-De root-layout met fonts, styling en de Navbar
+De root-layout met fonts, Tailwind en de Navbar
 
-De homepage met animaties, WebGL en projectslider
+De homepage met animaties, WebGL hero en projectslider
 
-De portfolio-map met het overzicht van projecten
+De portfolio-map met een overzicht van projecten
 
-Een slug-map voor dynamische projectpagina’s
+Een slug-map voor dynamische projectdetailpagina’s
 
-Een aparte Barber-Mardini map voor de uitgewerkte case
+Een aparte Barber-Mardini map voor de volledige case
 
-De map components bevat onder andere:
+De map components bevat o.a.:
 
 De Navbar
 
 De Balatro WebGL-animatie
 
-De map public bevat de projectafbeeldingen
+De map public bevat projectafbeeldingen
 
-tailwind.config.ts bevat kleur- en stijlconfiguratie
+tailwind.config.ts bevat de MAHWEB-kleuren en configuratie
 
 package.json bevat scripts en dependencies
 
@@ -118,11 +118,11 @@ Hero-sectie
 
 Shader-animatie met OGL
 
-Roterende cirkelanimaties met Framer Motion
+Roterende cirkelanimaties
 
-Fade-in headings en paragrafen
+Fade-in headings en tekst
 
-MAHWEB-branding in kleur en typografie
+Kleuren en typografie in MAHWEB-stijl
 
 Projectslider
 
@@ -130,60 +130,64 @@ Coverflow-effect
 
 Automatisch afspelen
 
-Touch- en muisbesturing
+Touch- en muisbediening
 
-Responsieve schaal
+Volledig responsive
 
 Casepagina’s
 
-Dynamische routing via de App Router
+Dynamische routing met de App Router
 
-Uitdaging, oplossing en resultaat per project
+Uitdaging → Oplossing → Resultaten structuur
 
-Extra animaties en visuele effecten
+Extra animaties per case
 
-Barber Mardini case volledig uitgewerkt
+Volledig uitgewerkte Barber Mardini case
 
-Responsief ontwerp
+Responsive ontwerp
 
-Mobile-first design
+Mobile-first
 
-Flex en grid
+Flexbox & Grid
 
 Schaalbare componenten
+
+Consistente spacing en typografie
 
 Belangrijke modules
 Balatro WebGL-shader
 
 Gebouwd met OGL
 
-Shader reageert op tijd, beweging en cursor
+Shader reageert op tijd, beweging en muis
 
-Unieke studio-achtige dieptewerking
+Unieke studio-achtige visuele stijl
 
-Geeft een premium uitstraling aan de hero-sectie
+Creëert een premium hero-ervaring
 
 Navbar
 
-Detecteert huidige route
+Detecteert huidige route via usePathname()
 
-Minimalistisch, strak ontwerp
+Minimalistisch en overzichtelijk ontwerp
 
-Vriendelijke gebruikerservaring
+Rustige UX met brandingkleuren
 
 Portfolio routing
 
-Slug-gebaseerd systeem
+Slug-gebaseerde dynamic routing
 
-Schone en SEO-vriendelijke URLs
+Schone URLs
 
-Makkelijk uitbreidbaar
+Eenvoudig uitbreidbaar met nieuwe projecten
 
 Afhankelijkheden
 
 next
 
-react & react-dom
+react
+
+react-dom
 
 tailwindcss
 
