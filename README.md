@@ -17,7 +17,7 @@ Deze portfolio toont echte klantprojecten op een rustige, moderne en interactiev
 - Dynamische casepagina’s via de Next.js App Router
 - Volledig responsive ontwerp
 
-## 🛠 Installatie
+## Installatie
 Zorg dat je **Node.js 18+** hebt geïnstalleerd.
 
 ```bash
