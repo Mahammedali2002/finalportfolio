@@ -32,3 +32,12 @@ html, body {
 * {
   box-sizing: border-box;
 }
+
+/* === Extra animaties / fallback spin === */
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.spin-slow {
+  animation: spin-slow 1.6s linear infinite;
+}

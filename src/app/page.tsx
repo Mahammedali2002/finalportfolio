@@ -1,5 +1,5 @@
 "use client";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import dynamic from "next/dynamic";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -7,10 +7,19 @@ import { EffectCoverflow, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
+import { useEffect, useState } from "react";
 
 const Balatro = dynamic(() => import("./components/Balatro"), { ssr: false });
 
 export default function Home() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    
+    const timer = setTimeout(() => setIsLoading(false), 1200);
+    return () => clearTimeout(timer);
+  }, []);
+
   const projects = [
     {
       title: "Car center tu",
@@ -41,6 +50,39 @@ export default function Home() {
 
   return (
     <>
+      <AnimatePresence>
+        {isLoading && (
+          <motion.div
+            initial={{ opacity: 1 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.6 }}
+            className="fixed inset-0 z-50 flex items-center justify-center bg-[#FAF6EB]"
+          >
+            <div className="relative flex items-center justify-center">
+              <motion.div
+                animate={{ rotate: 360 }}
+                transition={{ repeat: Infinity, duration: 3, ease: "linear" }}
+                className="absolute w-56 h-56 rounded-full border-4 border-dashed border-[#E9724C]"
+              />
+              <motion.div
+                animate={{ rotate: -360 }}
+                transition={{ repeat: Infinity, duration: 4, ease: "linear" }}
+                className="absolute w-72 h-72 rounded-full border-[6px] border-[#E9724C]/30"
+              />
+              <Image
+                src="/logo.png"
+                alt="MAHWEB Logo"
+                width={180}
+                height={180}
+                priority
+                className="relative drop-shadow-xl"
+              />
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
       {/* === HERO SECTIE === */}
       <main className="relative text-[#E9724C] min-h-screen flex flex-col md:flex-row items-center justify-center md:justify-around px-8 md:px-20 py-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
